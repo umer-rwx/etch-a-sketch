@@ -8,8 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Etch-A-Sketch</h1> 
-    <p>Hover over the grid to draw</p>
+    <div id="text">
+        <h1>Etch-A-Sketch</h1> 
+        <p>Hover over the grid to draw</p>
+        <input id="input" size="25" placeholder="Enter grid size ( p for a p x p grid)">
+        <input id="confirm" type="button" value="OK" onclick="createGrid()">
+    </div>
     <div id="container"></div>
 </body>
 </html>
