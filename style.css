@@ -1,15 +1,11 @@
-
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
-    gap: 32px;
-}
-
+    gap: 32px;}
 #text {
     display: flex;
     flex-direction: column;
-    margin: 32px;
-}
+    margin: 32px;}
 #container {
     flex: none;
     border: 1px solid black;
@@ -19,12 +15,9 @@ body {
     justify-content: center;
     align-content: center;
     margin: 16px auto;
-    width: 540px;
-}
-
+    width: 540px;}
 button {
     background-color: white;
     flex: none;
     border: 1px solid black;
-    margin: 0px;
-}
+    margin: 0px;}
