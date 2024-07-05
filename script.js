@@ -2,6 +2,13 @@
 // I don't know what I'm doing, but things are going pretty well so far
 
 "use strict";
+let drawAction;
+
+if (confirm ("Enable hover to draw")) {
+    drawAction = "mouseover";
+} else {
+    drawAction = "click";
+}
 
 let container = document.getElementById("container");
 const CONTAINER_WIDTH = 540;
@@ -24,7 +31,7 @@ function createGrid() {
     for (let i = 1; i <= buttonsPerRow ** 2; i++) {
         let button = document.createElement("button");
         button.style.width = button.style.height = buttonSize + "px";
-        button.addEventListener("mouseover", () => {button.style.backgroundColor = "black"});
+        button.addEventListener(drawAction, () => {button.style.backgroundColor = "black"});
         container.append(button);
     }
 }
