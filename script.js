@@ -24,7 +24,13 @@ function createGrid() {
     for (let i = 1; i <= buttonsPerRow ** 2; i++) {
         let button = document.createElement("button");
         button.style.width = button.style.height = buttonSize + "px";
-        button.addEventListener("click", () => {button.style.backgroundColor = "black"});
+        button.addEventListener("click", () => {
+            if (button.style.backgroundColor === "black")
+                button.style.backgroundColor = "white";
+            else {
+                button.style.backgroundColor = "black";
+            }
+        });
         container.append(button);
     }
 }
